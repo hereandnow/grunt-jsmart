@@ -22,6 +22,7 @@ module.exports = function(grunt) {
     if (typeof data === 'string') {
       if (grunt.file.isDir(data)) {
         grunt.file.recurse(data, function (abspath, rootdir, subdir, filename) {
+          if(path.extname(filename) !== '.json') { return; }
           var subObj = obj;
           if(subdir) {
             subdir.split(path.separator).forEach(function (item) {
@@ -34,7 +35,9 @@ module.exports = function(grunt) {
         });        
       }
       if (grunt.file.isFile(data)) {
-        obj[strcase.camelCase(path.basename(data, '.json'))] = grunt.file.readJSON(data);        
+        if(path.extname(data) === '.json') {
+          obj[strcase.camelCase(path.basename(data, '.json'))] = grunt.file.readJSON(data);          
+        }        
       }
     }
 
