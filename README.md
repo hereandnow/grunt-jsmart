@@ -82,9 +82,11 @@ grunt.initConfig({
         greeting: 'Hi, there are some JScript books you may find interesting:'
       }
     },
-    files: {
-      'dest/books.html': ['src/templates/books.tpl'],
-    },
+    your_target: {
+      files: {
+        'dest/books.html': ['src/templates/books.tpl'],
+      }
+    }
   },
 });
 ```
@@ -98,9 +100,11 @@ grunt.initConfig({
       templatePath: 'src/partials',
       data: 'src/data/books.json'
     },
-    files: {
-      'dest/books.html': ['src/templates/books.tpl'],
-    },
+    your_target: {
+      files: {
+        'dest/books.html': ['src/templates/books.tpl'],
+      }
+    }
   },
 });
 ```
@@ -114,9 +118,11 @@ grunt.initConfig({
       templatePath: 'src/partials',
       data: 'src/data/'
     },
-    files: {
-      'dest/books.html': ['src/templates/books.tpl'],
-    },
+    your_target: {
+      files: {
+        'dest/books.html': ['src/templates/books.tpl'],
+      }
+    }
   },
 });
 ```
@@ -126,4 +132,5 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 
 ## Release History
 
-0.1.0 Initial Version
+* 0.1.1 Issue #1, fix Examples in Readme
+* 0.1.0 Initial Version
