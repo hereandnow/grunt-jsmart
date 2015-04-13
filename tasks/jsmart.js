@@ -29,21 +29,21 @@ module.exports = function(grunt) {
               item = strcase.camelCase(item);
               subObj[item] = subObj[item] || {};
               subObj = subObj[item];
-            });  
-          }          
-          subObj[strcase.camelCase(path.basename(filename, '.json'))] = grunt.file.readJSON(abspath);          
-        });        
+            });
+          }
+          subObj[strcase.camelCase(path.basename(filename, '.json'))] = grunt.file.readJSON(abspath);
+        });
       }
       if (grunt.file.isFile(data)) {
         if(path.extname(data) === '.json') {
-          obj[strcase.camelCase(path.basename(data, '.json'))] = grunt.file.readJSON(data);          
-        }        
+          obj[strcase.camelCase(path.basename(data, '.json'))] = grunt.file.readJSON(data);
+        }
       }
     }
 
     if (Object.keys(obj).length === 0) {
       grunt.log.error('Could not extract any JSON-Data from ' + data);
-    } 
+    }
     return obj;
   }
 
@@ -53,10 +53,7 @@ module.exports = function(grunt) {
 
   grunt.registerMultiTask('jsmart', 'Compile Smarty Templates with jSmart', function() {
     // Merge task-specific and/or target-specific options with these defaults.
-    var options = this.options({
-      punctuation: '.',
-      separator: ', '
-    });
+    var options = this.options({});
 
     if (options.templatePath) {
       jSmart.prototype.getTemplate = function(name) {
@@ -81,9 +78,6 @@ module.exports = function(grunt) {
         compiledTpl = new jSmart(tpl);
         return compiledTpl.fetch(getTplData(options.data));
       }).join(grunt.util.normalizelf(options.separator));
-
-      // Handle options.
-      src += options.punctuation;
 
       // Write the destination file.
       grunt.file.write(f.dest, src);
