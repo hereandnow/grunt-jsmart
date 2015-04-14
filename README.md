@@ -132,5 +132,6 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 
 ## Release History
 
+* 0.1.2 Issue #2, fix Punctuation
 * 0.1.1 Issue #1, fix Examples in Readme
 * 0.1.0 Initial Version
