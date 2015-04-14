@@ -53,7 +53,9 @@ module.exports = function(grunt) {
 
   grunt.registerMultiTask('jsmart', 'Compile Smarty Templates with jSmart', function() {
     // Merge task-specific and/or target-specific options with these defaults.
-    var options = this.options({});
+    var options = this.options({
+      separator: ', '
+    });
 
     if (options.templatePath) {
       jSmart.prototype.getTemplate = function(name) {
