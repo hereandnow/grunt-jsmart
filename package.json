@@ -1,7 +1,7 @@
 {
   "name": "grunt-jsmart",
   "description": "Compile Smarty Templates with jSmart",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "homepage": "https://github.com/hereandnow/grunt-jsmart",
   "author": {
     "name": "Bastian \"hereandnow\" Behrens",
