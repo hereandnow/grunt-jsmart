@@ -8,8 +8,8 @@
 
 'use strict';
 
-require('jsmart');
-var path = require('path'),
+var jSmart = require('jsmart').jSmart,
+    path = require('path'),
     strcase = require('tower-strcase');
 
 module.exports = function(grunt) {
