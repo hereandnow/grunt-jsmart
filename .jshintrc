@@ -9,8 +9,5 @@
   "undef": true,
   "boss": true,
   "eqnull": true,
-  "node": true,
-  "globals"   : {
-    "jSmart": false
-  }
+  "node": true
 }
