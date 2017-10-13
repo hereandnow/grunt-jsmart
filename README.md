@@ -132,6 +132,8 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 
 ## Release History
 
+* 0.2.1 Issue #6, use original jsmart again
+* 0.2.0 Issue #5, use new jSmart Syntax
 * 0.1.2 Issue #2, fix Punctuation
 * 0.1.1 Issue #1, fix Examples in Readme
 * 0.1.0 Initial Version
