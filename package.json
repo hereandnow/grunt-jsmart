@@ -41,7 +41,7 @@
     "jsmart"
   ],
   "dependencies": {
-    "jsmart": "Avcajaraville/jsmart#master",
+    "jsmart": "^3.0.2",
     "tower-strcase": "^0.5.0"
   }
 }
