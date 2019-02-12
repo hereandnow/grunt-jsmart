@@ -4,6 +4,11 @@
 
 Read the [jSmart Documentation here](https://github.com/umakantp/jsmart/wiki)
 
+
+## THIS PACKAGE IS NOT MAINTAINED ANYMORE!
+
+i would transfer, if there would be someone to maintain
+
 ## Getting Started
 This plugin requires Grunt `~0.4.5`
 
